@@ -11,7 +11,7 @@
 
    ```
    python3 train.py files plagiat1 plagiat2 --model model.pkl
-   ``` <br />
+   ```
    
    files - директория с оригинальными программами <br />
    plagiat1, plagiat2 - директории с плагиатными программами <br />
