@@ -3,11 +3,11 @@
 
 #### 1. Установка requirements
 
-   ```json pip install -r /path/to/requirements.txt
+   ``` pip install -r /path/to/requirements.txt ```
    
 #### 2. Чтобы запустить обучение модели, необходимо ввести в командной строке: 
 
-   python3 train.py files plagiat1 plagiat2 --model model.pkl <br />
+   ```python3 train.py files plagiat1 plagiat2 --model model.pkl``` <br />
    
    files - директория с оригинальными программами <br />
    plagiat1, plagiat2 - директории с плагиатными программами <br />
@@ -15,7 +15,7 @@
 
 #### 3. Чтобы оценить похожесть программ:
 
-   python3 compare.py input.txt scores.txt --model model.pkl <br />
+   ```python3 compare.py input.txt scores.txt --model model.pkl``` <br />
    
    input.txt - файл с парами путей программ, которые нужно проверить на плагиат <br />
    scores.txt - файл, куда будут сохранены результаты оценки <br />
@@ -23,6 +23,8 @@
    
    Пример файлы input.txt: <br />
    
+   ```
    files/main.py plagiat1/main.py <br />
    files/loss.py plagiat2/loss.py <br />
    files/loss.py files/loss.py <br />
+   ```
