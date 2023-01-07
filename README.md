@@ -22,6 +22,7 @@
    model.pkl - файл с моделью <br />
    
    Пример файлы input.txt: <br />
+   
    files/main.py plagiat1/main.py <br />
    files/loss.py plagiat2/loss.py <br />
    files/loss.py files/loss.py <br />
