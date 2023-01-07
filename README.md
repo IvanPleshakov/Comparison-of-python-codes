@@ -30,7 +30,7 @@
    - пример файла input.txt: <br />
    
    ```
-   files/main.py plagiat1/main.py <br />
-   files/loss.py plagiat2/loss.py <br />
-   files/loss.py files/loss.py <br />
+   files/main.py plagiat1/main.py
+   files/loss.py plagiat2/loss.py
+   files/loss.py files/loss.py
    ```
