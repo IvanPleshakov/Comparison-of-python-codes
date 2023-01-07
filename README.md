@@ -3,7 +3,7 @@
 
 #### 1. Установка requirements
 
-   ```pip install -r /path/to/requirements.txt```
+   ```json pip install -r /path/to/requirements.txt
    
 #### 2. Чтобы запустить обучение модели, необходимо ввести в командной строке: 
 
