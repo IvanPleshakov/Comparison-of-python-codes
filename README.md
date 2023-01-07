@@ -27,7 +27,7 @@
    scores.txt - файл, куда будут сохранены результаты оценки <br />
    model.pkl - файл с моделью <br />
    
-   Пример файлы input.txt: <br />
+   пример файла input.txt: <br />
    
    ```
    files/main.py plagiat1/main.py <br />
