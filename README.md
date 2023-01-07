@@ -7,9 +7,9 @@
    
 2. Чтобы запустить обучение модели, необходимо ввести в командной строке: 
 
-   python3 train.py files plagiat1 plagiat2 --model model.pkl
-   files - директория с оригинальными программами
-   plagiat1, plagiat2 - директории с плагиатными программами
+   python3 train.py files plagiat1 plagiat2 --model model.pkl__
+   files - директория с оригинальными программами__
+   plagiat1, plagiat2 - директории с плагиатными программами__
    model.pkl - файл, куда будет сохранена модель.
 
 3. Чтобы оценить похожесть программ:
