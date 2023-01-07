@@ -21,7 +21,7 @@
 
    ```
    python3 compare.py input.txt scores.txt --model model.pkl
-   ``` <br />
+   ```
    
    input.txt - файл с парами путей программ, которые нужно проверить на плагиат <br />
    scores.txt - файл, куда будут сохранены результаты оценки <br />
