@@ -1,11 +1,11 @@
 # Tinkoff_DL
 ### Оценка похожести двух программ Python
 
-1. Установка requirements
+##### 1. Установка requirements
 
    pip install -r /path/to/requirements.txt
    
-2. Чтобы запустить обучение модели, необходимо ввести в командной строке: 
+##### 2. Чтобы запустить обучение модели, необходимо ввести в командной строке: 
 
    python3 train.py files plagiat1 plagiat2 --model model.pkl <br />
    
@@ -13,7 +13,7 @@
    plagiat1, plagiat2 - директории с плагиатными программами <br />
    model.pkl - файл, куда будет сохранена модель.
 
-3. Чтобы оценить похожесть программ:
+##### 3. Чтобы оценить похожесть программ:
 
    python3 compare.py input.txt scores.txt --model model.pkl <br />
    
