@@ -35,7 +35,7 @@ class Compare():
 
     def drop_comment(self, elem):
         # Удаляет комментарии из кода
-        # Т.к. AST может удается построить не всегда, то также будем использовать этот метод
+        # Т.к. AST удается построить не всегда, то также будем использовать этот метод
         elem = elem.split('"""')
         elem = [elem[i] for i in range(0, len(elem), 2)]
         elem = ' '.join(elem)
