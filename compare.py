@@ -500,10 +500,3 @@ model = Compare(input_path)
 answer_path = args.scores
 pkl_filename = args.model
 ans = model.predict_model(pkl_filename, answer_path)
-
-# input_path = 'input.txt'
-# model = Compare(input_path)
-# answer_path = 'scores.txt'
-# pkl_filename = 'model.pkl'
-# ans = model.predict_model(pkl_filename, answer_path)
-# print(ans)
