@@ -4,7 +4,7 @@ import ast
 import inspect # нужно, чтобы получить методы библиотеки ast
 import numpy as np
 import pandas as pd
-# import catboost as cb
+import catboost as cb
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 class Compare():
