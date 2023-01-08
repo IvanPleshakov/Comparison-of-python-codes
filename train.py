@@ -670,7 +670,7 @@ class Train():
                                       )
 
         model.fit(Xtrain, ytrain, verbose=False,
-                  use_best_model=True, eval_set=(Xval, yval))  # verbose=None,
+                  use_best_model=True, eval_set=(Xval, yval))
 
         with open(pkl_filename, 'wb') as file:
             pickle.dump(model, file)
