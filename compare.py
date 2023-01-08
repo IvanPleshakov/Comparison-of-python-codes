@@ -1,12 +1,14 @@
 import argparse
 import pickle
-import ast
 import warnings
+import ast
 import inspect # нужно, чтобы получить методы библиотеки ast
 import numpy as np
 import pandas as pd
 import catboost as cb
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+warnings.filterwarnings("ignore")
 
 class Compare():
     # Класс предсказания уровня похожести двух кодов
