@@ -323,31 +323,31 @@ class Compare():
         for i in range(0, range_len):
 
             a, b, c = i, i, i
-            # try:
-            # Для файлов plagiat1 и files
-            sent = self.get_structure(self.files[a], vert)
-            sent1 = self.get_structure(self.plagiat1[b], vert)
-            maxx = max(len(sent1), len(sent))
-            minn = min(len(sent1), len(sent))
-            sent = [sent, sent1]
-            vectorizer = TfidfVectorizer(
-                tokenizer=lambda x: self.tokenize_text(x),
-                max_features=5000,
-                ngram_range=(7, 10))
-            body = vectorizer.fit_transform(sent)
-            df = pd.DataFrame(body.toarray(),
-                              columns=vectorizer.get_feature_names_out())
+            try:
+                # Для файлов plagiat1 и files
+                sent = self.get_structure(self.files[a], vert)
+                sent1 = self.get_structure(self.plagiat1[b], vert)
+                maxx = max(len(sent1), len(sent))
+                minn = min(len(sent1), len(sent))
+                sent = [sent, sent1]
+                vectorizer = TfidfVectorizer(
+                    tokenizer=lambda x: self.tokenize_text(x),
+                    max_features=5000,
+                    ngram_range=(7, 10))
+                body = vectorizer.fit_transform(sent)
+                df = pd.DataFrame(body.toarray(),
+                                  columns=vectorizer.get_feature_names_out())
 
-            diff = minn / maxx
-            cos1 = sum(df.iloc[0].values.reshape(-1, 1) * \
-                       df.iloc[1].values.reshape(-1, 1)) * diff / \
-                       ((sum(df.iloc[0].values.reshape(-1, 1) ** 2) ** 0.5) * \
-                       (sum(df.iloc[1].values.reshape(-1, 1) ** 2) ** 0.5))
+                diff = minn / maxx
+                cos1 = sum(df.iloc[0].values.reshape(-1, 1) * \
+                           df.iloc[1].values.reshape(-1, 1)) * diff / \
+                           ((sum(df.iloc[0].values.reshape(-1, 1) ** 2) ** 0.5) * \
+                           (sum(df.iloc[1].values.reshape(-1, 1) ** 2) ** 0.5))
 
-            dict1.append(cos1[0])
-            # except:
-            #     # При невозможности построения AST, будем добавлять -1
-            #     dict1.append(-1)
+                dict1.append(cos1[0])
+            except:
+                # При невозможности построения AST, будем добавлять -1
+                dict1.append(-1)
 
             try:
                 # Для файлов plagiat2 и files
