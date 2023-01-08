@@ -694,17 +694,4 @@ pkl_filename = args.model
 result = model.train_model(pkl_filename)
 print(result)
 
-# files_path = 'files/'
-# plagiat1_path = 'plagiat1/'
-# plagiat2_path = 'plagiat2/'
-# model = Train(files_path, plagiat1_path, plagiat2_path)
-# pkl_filename = 'model.pkl'
-# m = model.train_model(pkl_filename)
-# print(m)
-
-# with open('plagiat1/add_constant.py', encoding='utf-8') as f:
-#     code = f.read()
-#     print(model.clear(code))
-
-
 
