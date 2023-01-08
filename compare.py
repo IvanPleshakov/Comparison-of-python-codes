@@ -57,7 +57,6 @@ class Compare():
         symbols = ['\n', '\t']
         string = string.replace('\n', ' ', -1)
         string = string.replace('\t', ' ', -1)
-
         string = string.replace('"', "'", -1)
         tokens = string.split(' ')
         tokens = [token for token in tokens if (token)]
@@ -74,10 +73,9 @@ class Compare():
         files_indexes = []
         plag1_indexes = []
         plag2_indexes = []
-
         range_len = 1
         for q in range(range_len):
-
+            
             rng = np.random.RandomState(q)
             for i in range(0, len(self.files)):
 
@@ -182,7 +180,7 @@ class Compare():
         names_list = names_list.split("'")
         names_list = [names_list[i] for i in range(1, len(names_list), 2)]
         names_string = ' '.join(names_list)
-
+        
         syntax = ":()=.,+*&|\[]_"
         for i in syntax:
             names_string = names_string.replace(i, '', -1)
@@ -201,7 +199,6 @@ class Compare():
 
         dict1 = []
         dict2 = []
-
         range_len = len(self.files)
 
         for i in range(0, range_len):
