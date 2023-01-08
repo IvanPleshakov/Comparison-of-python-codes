@@ -60,7 +60,6 @@ class Train():
         symbols = ['\n', '\t']
         string = string.replace('\n', ' ', -1)
         string = string.replace('\t', ' ', -1)
-
         string = string.replace('"', "'", -1)
         tokens = string.split(' ')
         tokens = [token for token in tokens if (token)]
@@ -181,8 +180,7 @@ class Train():
     def clear(self, string):
         # очищает код, строя Abstract syntax tree
         string = self.drop_comment(string)
-        string = string.replace("'t ", ' ',
-                                -1)  # чтобы избежать ошибки при исп. doesn't
+        string = string.replace("'t ", ' ', -1)  # чтобы избежать ошибки при исп. doesn't
         parse = ast.parse(string)
         unparse = ast.unparse(parse)
         unparse = unparse.replace('"', "'", -1)
