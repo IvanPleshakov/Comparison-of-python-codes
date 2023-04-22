@@ -1,4 +1,4 @@
-# Tinkoff_DL
+# Comparison of Python codes
 ### Оценка похожести двух программ Python
 
 #### 1. Установка requirements
